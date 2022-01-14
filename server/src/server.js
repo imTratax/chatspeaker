@@ -2,6 +2,8 @@ const WebSocket = require("ws");
 
 const wss = new WebSocket.Server({ port: 8080 });
 
+console.log(`Server started.`);
+
 try {
     wss.on('connection', function connection(ws) {
         console.log(`A new websocket session has established`);
